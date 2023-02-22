@@ -1,0 +1,129 @@
+.navbar{
+    background-color: #1e202b;
+}
+.container{
+    padding: 50px 0px;
+}
+.nav-item{
+
+}
+.nav-link.active,
+.nav-link{
+    margin: 2px;
+    border-color:rgba(0, 154, 216,0) ;
+    transition: border-color .3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 5px 25px;
+}
+.nav-link.active,
+.nav-link:hover{
+    border: 2px solid rgba(0, 154, 216,1);
+    color: rgb(0, 154, 216)!important;
+    border-radius: 50px;
+    margin: 0px;
+}
+/* ********************** */
+/* search */
+.search-home{
+    background-image: url(./images/banner.png);
+    background-attachment: fixed;
+}
+.find-location{
+    margin-bottom: 4.4rem;
+    background-color: #1e202b;
+    border-radius: 50px;
+    position: relative;
+}
+.search{
+    padding: 20px 50px 20px 20px;
+    border-radius: 50px;
+    background-color: #1e202b;
+    border-width: 0px;
+}
+.submit{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0px 40px;
+    background-color:rgb(0, 154, 216) ;
+    border-radius: 30px;
+    border-width: 0px;
+    color: white;
+}
+/* ********************** */
+/* tableWeather */
+.tableWeather{
+    background-color: #1e202b;
+}
+.tableWeather-contain{
+    margin-top: -150px;
+}
+.row>*{
+    padding-left: 0;
+    padding-right: 0;
+}
+.weather-contain2{
+    background-color: #262936;
+}
+.weather-contain3{
+    background-color: #323544;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.header{
+    background-color: #2d303d;
+}
+.header1{
+        border-top-left-radius: 10px;
+}
+.header2{
+    background-color: #222530;
+}
+.header3{
+            border-top-right-radius: 10px;
+}
+.weathercontent{
+    background-color: #323544;
+}
+.weathercontent1{
+    border-bottom-left-radius: 10px;
+}
+.weathercontent2{
+background-color: #262936;
+}
+.num{
+    font-size: 90px;
+        font-weight: 700;
+}
+.num-degree{
+    margin-top: -30px;
+}
+.image-degree>img{
+    width: 90px;
+}
+.degree2{
+    font-size: 1.71429em;
+    color: white;
+    font-weight: 700;
+}
+/* ************************ */
+footer{
+    background-color: #262936;
+}
+.subscribe-form{
+    position: relative;
+}
+.social-links>a{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: #1e202b;
+    transition: background-color .3s ;
+}
+.social-links>a:hover{
+    background-color: #009ad8;
+    color: white;
+}

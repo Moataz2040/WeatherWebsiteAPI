@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather API</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <img src="./css/images/logo.png" alt="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-around w-75 ms-auto"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="search-home py-5">
+        <div class="container">
+          <form class="find-location">
+            <input
+              type="text"
+              placeholder="Find your location..."
+              class="search w-100 text-white"
+              id="search"
+            />
+            <input type="button" value="Find" class="submit" id="submit" />
+          </form>
+        </div>
+      </section>
+      <section class="tableWeather d-none" id="tableWeather">
+        <div class=" container">
+          <div class="tableWeather-contain row">
+            <div class="weather-contain col">
+              <div
+                class="header  p-2 text-center text-white-50"
+              >
+                <p id="currentDate">Wednesday</p>
+              </div>
+              <div
+                class="weathercontent weathercontent1 py-4 px-3 text-white-50"
+              >
+                <div class="location" id="city"></div>
+                <div class="degree d-flex justify-content-around">
+                  <div class="num text-white d-flex" id="num">
+                     <span class="num-degree">o</span>C
+                  </div>
+                  <div class="image-degree align-self-end">
+                    <img src="./css/images/116.png" alt="" id="currentImage" />
+                  </div>
+                </div>
+                <div class="custom text-primary my-3" id="currentCondition"></div>
+                <span class="me-3">
+                  <img src="./css/images/icon-umberella.png" alt="" />
+                  20%
+                </span>
+                <span class="me-3">
+                  <img src="./css/images/icon-wind.png" alt="" />
+                  18km/h
+                </span>
+                <span class="me-3">
+                  <img src="./css/images/icon-compass.png" alt="" />
+                  East
+                </span>
+              </div>
+            </div>
+            <div class="weather-contain weather-contain2 col text-center">
+              <div
+                class="header header2 p-2 text-center text-white-50"
+              >
+                <p id="secondDate"></p>
+              </div>
+              <div
+                class="weathercontent weathercontent2 py-4 px-2 text-white-50"
+              >
+                <div class="image">
+                  <img src="./css/images/113.png" alt="" id="secondImage">
+                </div>
+                <div class="degree2" id="secondMaxTemp">
+                  2<sup>o</sup>C
+                </div>
+                <div class="tDegree" id="secondMinTemp"><sup>o</sup></div>
+                <div class="custom text-primary my-3" id="secondCondition"></div>
+              </div>
+            </div>
+            <div class="weather-contain weather-contain3 col text-center">
+              <div
+                class="header header3 p-2 text-center text-white-50"
+              >
+                <p id="thirdDate"></p>
+              </div>
+              <div
+                class="weathercontent weathercontent3 py-4 px-2 text-white-50"
+              >
+                <div class="image">
+                  <img src="./css/images/113.png" alt="" id="thirdImage">
+                </div>
+                <div class="degree2" id="thirdMaxTemp">
+                  <sup>o</sup>C
+                </div>
+                <div class="tDegree" id="thirdMinTemp">
+                  <sup>o</sup>
+                </div>
+                <div class="custom text-primary my-3" id="thirdCondition"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-md-8">
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Enter your email to subscribe..." class="search w-100">
+								<input type="submit" value="Subscribe" class="submit">
+							</form>
+						</div>
+						<div class="col-md-3 col-md-offset-1 align-self-center">
+							<div class="social-links d-flex justify-content-around">
+								<a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-facebook"></i></a>
+								<a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-google-plus-g"></i></a>
+								<a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<p class="colophon text-white-50 mt-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+				</div>
+			</footer>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
